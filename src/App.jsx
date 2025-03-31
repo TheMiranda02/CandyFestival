@@ -2,6 +2,15 @@ import './App.css';
 import React, { useEffect } from 'react';
 
 function App() {
+
+  //Flecha
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   //MODALES
   useEffect(() => {
     // Código de los modales EXACTAMENTE como lo tienes
@@ -600,6 +609,15 @@ function App() {
         </footer>
 
       </div>
+
+      <button 
+        onClick={scrollToTop}
+        className="scroll-top-button"
+        aria-label="Volver al inicio"
+      >
+        ↑
+      </button>
+
     </div>
   );
 }
