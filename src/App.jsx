@@ -13,7 +13,7 @@ function App() {
 
   //MODALES
   useEffect(() => {
-    // Código de los modales EXACTAMENTE como lo tienes
+    // Código de los modales -
     document.querySelector('.btn-login').onclick = function() {
       document.getElementById('loginModal').style.display = 'block';
     }
